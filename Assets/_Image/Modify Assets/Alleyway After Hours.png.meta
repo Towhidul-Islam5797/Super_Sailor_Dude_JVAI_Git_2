@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 1ab45ff102dd51948b0598f3b7c6e33b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2541655719319305170
+    second: Alleyway After Hours_0
+  - first:
+      213: -8661847131933634823
+    second: Alleyway After Hours_1
+  - first:
+      213: -2152740648665480800
+    second: Alleyway After Hours_2
+  - first:
+      213: -3901548263696971178
+    second: Alleyway After Hours_3
+  - first:
+      213: 7941237410281258649
+    second: Alleyway After Hours_4
+  - first:
+      213: 5760153003723345696
+    second: Alleyway After Hours_5
+  - first:
+      213: 2675819765681477904
+    second: Alleyway After Hours_6
+  - first:
+      213: 2456801601199766471
+    second: Alleyway After Hours_7
+  - first:
+      213: -8215963105299048525
+    second: Alleyway After Hours_8
+  - first:
+      213: 1429986604607570635
+    second: Alleyway After Hours_9
+  - first:
+      213: 5429284964643278097
+    second: Alleyway After Hours_10
+  - first:
+      213: 5627307985342595803
+    second: Alleyway After Hours_11
+  - first:
+      213: -5434003663566031541
+    second: Alleyway After Hours_12
+  - first:
+      213: 8920694827759835451
+    second: Alleyway After Hours_13
+  - first:
+      213: 1199733693472033600
+    second: Alleyway After Hours_14
+  - first:
+      213: 7248325991882527512
+    second: Alleyway After Hours_15
+  - first:
+      213: 2717817486197727605
+    second: Alleyway After Hours_16
+  - first:
+      213: 2035696086701675460
+    second: Alleyway After Hours_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alleyway After Hours_0
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 835
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbfd531966c54320800000000000000
+      internalID: 2541655719319305170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_1
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 827
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe0c5a0defeac780800000000000000
+      internalID: -8661847131933634823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 835
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a100c629cdef12e0800000000000000
+      internalID: -2152740648665480800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 1021
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65acc44868aead9c0800000000000000
+      internalID: -3901548263696971178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 812
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e7bd4a951f43e60800000000000000
+      internalID: 7941237410281258649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_5
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 824
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f44d663ac20ff40800000000000000
+      internalID: 5760153003723345696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 822
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019d96856eb622520800000000000000
+      internalID: 2675819765681477904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_7
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 818
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb7f132a00581220800000000000000
+      internalID: 2456801601199766471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 643
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b75fe4f5190bfd80800000000000000
+      internalID: -8215963105299048525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_9
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 608
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc283319d3558d310800000000000000
+      internalID: 1429986604607570635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_10
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 599
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d8ee5e8e1b85b40800000000000000
+      internalID: 5429284964643278097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_11
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 585
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd280144cc6381e40800000000000000
+      internalID: 5627307985342595803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 558
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45b9f4657a8694b0800000000000000
+      internalID: -5434003663566031541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_13
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 569
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b391a469eacaccb70800000000000000
+      internalID: 8920694827759835451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_14
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 508
+        width: 12
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bc770107f46a010800000000000000
+      internalID: 1199733693472033600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_15
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 560
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813936a161a379460800000000000000
+      internalID: 7248325991882527512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_16
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 485
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5712925aa90a7b520800000000000000
+      internalID: 2717817486197727605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alleyway After Hours_17
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 469
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c391862ece304c10800000000000000
+      internalID: 2035696086701675460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alleyway After Hours_0: 2541655719319305170
+      Alleyway After Hours_1: -8661847131933634823
+      Alleyway After Hours_10: 5429284964643278097
+      Alleyway After Hours_11: 5627307985342595803
+      Alleyway After Hours_12: -5434003663566031541
+      Alleyway After Hours_13: 8920694827759835451
+      Alleyway After Hours_14: 1199733693472033600
+      Alleyway After Hours_15: 7248325991882527512
+      Alleyway After Hours_16: 2717817486197727605
+      Alleyway After Hours_17: 2035696086701675460
+      Alleyway After Hours_2: -2152740648665480800
+      Alleyway After Hours_3: -3901548263696971178
+      Alleyway After Hours_4: 7941237410281258649
+      Alleyway After Hours_5: 5760153003723345696
+      Alleyway After Hours_6: 2675819765681477904
+      Alleyway After Hours_7: 2456801601199766471
+      Alleyway After Hours_8: -8215963105299048525
+      Alleyway After Hours_9: 1429986604607570635
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
