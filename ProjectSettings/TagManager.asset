@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Ground
+  - FxTemporaire
+  - Energy
+  - Health
+  - Punch Pointer
+  - Kick Pointer
+  - Punch hit box
+  - Kick hit box
+  - Enemy
+  - Enemy Hit Box
+  - Dock rat
+  - CaptainBodyBumpHit
+  - PlayerBody
+  - EnemyBullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Effects
+  - PlayerBody
+  - PunchHitBox
+  - KickHitBox
+  - EnemyBody
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 60052107
+    locked: 0
+  - name: Effects
+    uniqueID: 2934042237
+    locked: 0
+  - name: Buttons
+    uniqueID: 1394938341
+    locked: 0
+  m_RenderingLayers:
+  - Default
