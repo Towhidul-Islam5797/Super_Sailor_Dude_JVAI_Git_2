@@ -729,6 +729,8 @@ MonoBehaviour:
   playerInput: {fileID: 0}
   moveInput: 0
   jumpPressed: 0
+  isHurt: 0
+  isDead: 0
   animator: {fileID: 7842716867076018708}
   visualTransform: {fileID: 1121646221499446103}
   facingRight: 1
@@ -753,10 +755,14 @@ MonoBehaviour:
   energyText: {fileID: 0}
   vecGravity: {x: 0, y: 0}
   isGrounded: 0
+  canDoubleJump: 1
+  hasDoubleJumped: 0
+  attackCooldown: 0.25
   punchCollider: {fileID: 6735847668088857374}
   punchPressed: 0
   kickCollider: {fileID: 7999751525576447810}
   kickPressed: 0
+  isFrozen: 0
 --- !u!1 &5330307663757327026
 GameObject:
   m_ObjectHideFlags: 0
