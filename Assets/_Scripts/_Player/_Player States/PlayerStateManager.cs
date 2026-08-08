@@ -68,6 +68,14 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public Vector2 vecGravity;
     [HideInInspector] public bool isGrounded;
 
+    [Header("Double Jump Settings")]
+    public bool canDoubleJump = true;
+    [HideInInspector] public bool hasDoubleJumped = false;
+
+    [Header("Attack Cooldown Settings")]
+    public float attackCooldown = 0.25f; // minimum milliseconds delay between combo presses
+    private float lastAttackTime = -10f;
+
     #region Punch Variables
     [Header("Punch Settings")]
     public Collider2D punchCollider;
@@ -101,6 +109,7 @@ public class PlayerStateManager : MonoBehaviour
 
         punchCollider.enabled = false;
         kickCollider.enabled = false;
+        hasDoubleJumped = false;
     }
 
     void Update()
@@ -115,6 +124,16 @@ public class PlayerStateManager : MonoBehaviour
     {
         // Continous Ground Check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadious, groundLayer);
+        if (isGrounded)
+        {
+            hasDoubleJumped = false;
+        }
+
+        // Prevent horizontal sliding when player is grounded and there is no input
+        if (isGrounded && moveInput == 0f)
+        {
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        }
 
 
         GravityMultiplication();
@@ -122,9 +141,15 @@ public class PlayerStateManager : MonoBehaviour
 
     public void SwitchState()
     {
+        animator.SetBool("isGrounded_b", isGrounded);
+
         if (moveInput != 0)
         {
             animator.SetBool("run_b", true);
+        }
+        else
+        {
+            animator.SetBool("run_b", false);
         }
         if (punchPressed)
         {
@@ -136,11 +161,23 @@ public class PlayerStateManager : MonoBehaviour
             animator.SetTrigger("Kick_t");
             kickPressed = false;
         }
-        if (jumpPressed == true && isGrounded == true)
+        if (jumpPressed == true)
         {
-            animator.SetTrigger("Jump_t");
-            jumpPressed = false;
-
+            if (isGrounded == true)
+            {
+                animator.SetTrigger("Jump_t");
+                jumpPressed = false;
+            }
+            else if (canDoubleJump && !hasDoubleJumped)
+            {
+                hasDoubleJumped = true;
+                animator.SetTrigger("Jump_t");
+                jumpPressed = false;
+            }
+            else
+            {
+                jumpPressed = false;
+            }
         }
         if (isHurt)
         {
@@ -235,17 +272,27 @@ public class PlayerStateManager : MonoBehaviour
     // Punch Input
     public void Punch(InputAction.CallbackContext context)
     {
+        if (isFrozen || isDead) return;
         if (context.performed)
         {
-            punchPressed = true;
+            if (Time.time - lastAttackTime >= attackCooldown)
+            {
+                punchPressed = true;
+                lastAttackTime = Time.time;
+            }
         }
     }
 
     public void Kick(InputAction.CallbackContext context)
     {
+        if (isFrozen || isDead) return;
         if (context.performed)
         {
-            kickPressed = true;
+            if (Time.time - lastAttackTime >= attackCooldown)
+            {
+                kickPressed = true;
+                lastAttackTime = Time.time;
+            }
         }
     }
     #endregion
@@ -340,5 +387,13 @@ public class PlayerStateManager : MonoBehaviour
     }
     #endregion
 
+    #region Attack Cooldown Checks
+    public bool IsAttacking()
+    {
+        if (animator == null) return false;
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        return stateInfo.IsName("Punch") || stateInfo.IsName("Kick") || stateInfo.IsName("Hurt") || stateInfo.IsName("Die") || animator.IsInTransition(0);
+    }
+    #endregion
 
 }

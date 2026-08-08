@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Punch
+  serializedVersion: 7
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: 3788338134833184828, guid: ee93acb7e4d2bbe499162d7c1e9c3950, type: 3}
+    - time: 0.041666668
+      value: {fileID: 3839124661472051193, guid: 98087fc1eb42c2f42bc7afd4a8e71c35, type: 3}
+    - time: 0.083333336
+      value: {fileID: -5907383424675222972, guid: 84a03cc1903dccb44b698e043b0f1364, type: 3}
+    - time: 0.125
+      value: {fileID: 6300066662258702866, guid: 4de9958a3c07f8b45ac5e7b18a339ee2, type: 3}
+    - time: 0.16666667
+      value: {fileID: -4370557901179060265, guid: 7431ca427752a4d46a7cc7729564a94a, type: 3}
+    - time: 0.20833333
+      value: {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
+    - time: 0.25
+      value: {fileID: 4037317827035799572, guid: b07409b5d47429643b5d206b6f22584c, type: 3}
+    - time: 0.29166666
+      value: {fileID: -2310789110609630488, guid: 0a28438ec5636ad46a2f5094cdcc4f49, type: 3}
+    - time: 0.33333334
+      value: {fileID: 7182554000305579275, guid: afc940ad6484f404ebbf48916354f260, type: 3}
+    - time: 0.375
+      value: {fileID: 6383331028986945764, guid: ea51e211ddf6ee145b6a79bb6ed718a8, type: 3}
+    - time: 0.41666666
+      value: {fileID: -1290171254126351677, guid: 208fe4f2409c4be40b814812c07bc0e1, type: 3}
+    - time: 0.45833334
+      value: {fileID: -2375199655702765327, guid: 85363a616be27a04da56445b4cfd32f1, type: 3}
+    - time: 0.5
+      value: {fileID: 994544637910589071, guid: 6e2d420958c455e439253a23b6d3917e, type: 3}
+    - time: 0.5416667
+      value: {fileID: -3705457514543470976, guid: b8bdccddd0b035546a91a38f97370e01, type: 3}
+    - time: 0.5833333
+      value: {fileID: 8376539002323350662, guid: 57f8c88a3ca9ea744aac5b9c3a95f749, type: 3}
+    - time: 0.625
+      value: {fileID: -8235706392345451360, guid: d98b4515906f23744989ec7ce953fb6f, type: 3}
+    - time: 0.6666667
+      value: {fileID: 4140180171732261626, guid: 0bd08ea41dab0ad4b91a6dda458aa105, type: 3}
+    - time: 0.7083333
+      value: {fileID: 2353459536733509279, guid: 5acb83c3c24336847abbf2049fa1feeb, type: 3}
+    - time: 0.75
+      value: {fileID: 6527197734609408482, guid: 7e361fc10d2a7ae43b1962441c1b722c, type: 3}
+    - time: 0.7916667
+      value: {fileID: 2113577774698695910, guid: 8b8606710c7b1b24fb363df7fcff6eaa, type: 3}
+    - time: 0.8333333
+      value: {fileID: -4835457940484794703, guid: b5b5f160b3a891f4a9145e96fa2f24fa, type: 3}
+    attribute: m_Sprite
+    path: Body
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+  m_SampleRate: 24
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - serializedVersion: 2
+      path: 2073732236
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: 3788338134833184828, guid: ee93acb7e4d2bbe499162d7c1e9c3950, type: 3}
+    - {fileID: 3839124661472051193, guid: 98087fc1eb42c2f42bc7afd4a8e71c35, type: 3}
+    - {fileID: -5907383424675222972, guid: 84a03cc1903dccb44b698e043b0f1364, type: 3}
+    - {fileID: 6300066662258702866, guid: 4de9958a3c07f8b45ac5e7b18a339ee2, type: 3}
+    - {fileID: -4370557901179060265, guid: 7431ca427752a4d46a7cc7729564a94a, type: 3}
+    - {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
+    - {fileID: 4037317827035799572, guid: b07409b5d47429643b5d206b6f22584c, type: 3}
+    - {fileID: -2310789110609630488, guid: 0a28438ec5636ad46a2f5094cdcc4f49, type: 3}
+    - {fileID: 7182554000305579275, guid: afc940ad6484f404ebbf48916354f260, type: 3}
+    - {fileID: 6383331028986945764, guid: ea51e211ddf6ee145b6a79bb6ed718a8, type: 3}
+    - {fileID: -1290171254126351677, guid: 208fe4f2409c4be40b814812c07bc0e1, type: 3}
+    - {fileID: -2375199655702765327, guid: 85363a616be27a04da56445b4cfd32f1, type: 3}
+    - {fileID: 994544637910589071, guid: 6e2d420958c455e439253a23b6d3917e, type: 3}
+    - {fileID: -3705457514543470976, guid: b8bdccddd0b035546a91a38f97370e01, type: 3}
+    - {fileID: 8376539002323350662, guid: 57f8c88a3ca9ea744aac5b9c3a95f749, type: 3}
+    - {fileID: -8235706392345451360, guid: d98b4515906f23744989ec7ce953fb6f, type: 3}
+    - {fileID: 4140180171732261626, guid: 0bd08ea41dab0ad4b91a6dda458aa105, type: 3}
+    - {fileID: 2353459536733509279, guid: 5acb83c3c24336847abbf2049fa1feeb, type: 3}
+    - {fileID: 6527197734609408482, guid: 7e361fc10d2a7ae43b1962441c1b722c, type: 3}
+    - {fileID: 2113577774698695910, guid: 8b8606710c7b1b24fb363df7fcff6eaa, type: 3}
+    - {fileID: -4835457940484794703, guid: b5b5f160b3a891f4a9145e96fa2f24fa, type: 3}
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 0.875
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_Events:
+  - time: 0.016666668
+    functionName: EnablePunchCollider
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.06666667
+    functionName: DisablePunchCollider
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

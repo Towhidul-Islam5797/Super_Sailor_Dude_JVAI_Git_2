@@ -1,0 +1,13 @@
+﻿<Solution>
+  <Project Path="LeanCommon.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="CFXRRuntime.csproj" />
+  <Project Path="CFXRDemo.csproj" />
+  <Project Path="CFXREditor.csproj" />
+  <Project Path="CW.Common.csproj" />
+  <Project Path="Assembly-CSharp-firstpass.csproj" />
+  <Project Path="KinoBloom.Runtime.csproj" />
+  <Project Path="CFXR.WelcomeScreen.csproj" />
+  <Project Path="ToonyColorsPro.Demo.Editor.csproj" />
+  <Project Path="LeanPool.csproj" />
+</Solution>

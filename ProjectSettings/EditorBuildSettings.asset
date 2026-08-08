@@ -18,8 +18,15 @@ EditorBuildSettings:
     path: Assets/_Scene/Level 1 DockSide.unity
     guid: f2d88d243d5af764dabc2409f6542acb
   - enabled: 1
-    path: Assets/_Scene/Level 2 Alleyway.unity
+    path: Assets/_Scene/Level 2 Alleyway After Hours.unity
     guid: 578bad4c2095f3e4db11e3eeea3845ef
+  - enabled: 1
+    path: Assets/_Scene/Level 3 Concrete Jungle Park.unity
+    guid: 647467f2fd47b9041a304fea0a37a488
+  - enabled: 1
+    path: Assets/_Scene/Level 4 Flooded Shipyard.unity
+    guid: c0c8248cc412c9a458b9f9e17d792440
   m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

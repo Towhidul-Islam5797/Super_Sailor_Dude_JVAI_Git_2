@@ -20,12 +20,13 @@ public class RunState : StateMachineBehaviour
     {
         if(_stateManager.moveInput != 0)
         {
-            _player.Translate(_player.right * _speed * _stateManager.moveInput * Time.deltaTime);
+            _stateManager.rb.linearVelocity = new Vector2(_stateManager.moveInput * _stateManager.moveSpeed, _stateManager.rb.linearVelocity.y);
 
         }
 
         else if(_stateManager.moveInput == 0)
         {
+            _stateManager.rb.linearVelocity = new Vector2(0f, _stateManager.rb.linearVelocity.y);
             animator.SetBool("run_b", false);
         }
     }
