@@ -791,10 +791,10 @@ PlayerSettings:
     PS4: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
     PS5: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
     QNX: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
-    Standalone: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Standalone: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO;SENTIS_ANALYTICS_ENABLED;APP_UI_EDITOR_ONLY
     VisionOS: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
     WebGL: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
-    Windows Store Apps: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
+    Windows Store Apps: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO;APP_UI_EDITOR_ONLY;SENTIS_ANALYTICS_ENABLED
     XboxOne: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
     iPhone: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
     tvOS: DOTWEEN;DOTWEEN_UITOOLKIT;DOTWEEN_EPO
@@ -874,7 +874,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -896,11 +902,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 1118a205-056f-435d-aa63-ad3fa3ec207e
+  cloudProjectId: 4aedf109-7f59-4a8c-9921-82cd602f683e
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Super_Sailor_Dude_JVAI
-  organizationId: violetshadow7777
+  projectName: Visual Noise Bros
+  organizationId: tamalunity22
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

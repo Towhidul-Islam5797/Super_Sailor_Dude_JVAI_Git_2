@@ -21,13 +21,16 @@ public class SceneShluffle : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1 Dockside");
     }
-    public void Level2Scene()
+    public void AlleyWayScene()
     {
-        SceneManager.LoadScene("Level 2 Alleyway");
+        SceneManager.LoadScene("Level 2 Alleyway After Hours");
     }
-
-    public void Level3Scene()
+    public void ConcreteJungleParkScene()
     {
-        SceneManager.LoadScene("Level 3 Rooftop");
+        SceneManager.LoadScene("Level 3 Concrete Jungle Park");
     }
-}   
+    public void FlooderdShipyard()
+    {
+        SceneManager.LoadScene("Level 4 Flooded Shipyard");
+    }
+}

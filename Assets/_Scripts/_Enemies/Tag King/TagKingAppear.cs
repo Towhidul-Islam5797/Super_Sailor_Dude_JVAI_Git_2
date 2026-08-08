@@ -20,6 +20,7 @@ public class TagKingAppear : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("[Test] TagKingAppear Start() called. GameObject: " + gameObject.name + ", activeSelf = " + gameObject.activeSelf + ", activeInHierarchy = " + gameObject.activeInHierarchy);
         _tagKing.SetActive(false);
         _healthBar.SetActive(false);
         _leftCollider.enabled = false;
@@ -47,14 +48,19 @@ public class TagKingAppear : MonoBehaviour
         _tagKingScript = _tagKing.GetComponent<TagKing>();
         _animator = _tagKing.GetComponent<Animator>();
 
+        // Temporarily commented out: Do not offset or slide Tag King from his editor position
+        /*
         // Start off screen to the right
         Vector3 startPos = _tagKing.transform.position;
         startPos.x += _startOffsetX;
         _tagKing.transform.position = startPos;
+        */
 
         // Set Walk animation while entering
         _animator.SetBool("Walk_b", true);
 
+        // Temporarily commented out: Do not slide Tag King via DOMoveX
+        /*
         // DoTween slide in
         _tagKing.transform.DOMoveX(_targetX, _enterDuration)
             .SetEase(Ease.OutQuad)
@@ -62,5 +68,6 @@ public class TagKingAppear : MonoBehaviour
             {
                 // Already walking so nothing needed here
             });
+        */
     }
 }

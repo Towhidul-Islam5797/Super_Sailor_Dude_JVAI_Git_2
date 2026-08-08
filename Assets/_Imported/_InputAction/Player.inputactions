@@ -78,8 +78,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "1D Axis",
-                    "id": "2a68fe46-7e30-4323-9f32-1ad5f7f91abb",
+                    "name": "Keyboard AD",
+                    "id": "87dc4187-0813-4e8f-a8fd-740a7abb4776",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -90,7 +90,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "928ed809-ae00-495f-abee-749f86234b5b",
+                    "id": "84c1d54b-8daa-4028-9804-410dbd9bc671",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -101,8 +101,41 @@
                 },
                 {
                     "name": "positive",
-                    "id": "5b3ddb9d-5f41-4559-82b9-b274ccd0286b",
+                    "id": "8ed1e6b7-712a-49ee-92a6-1954077a8092",
                     "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Keyboard Arrows",
+                    "id": "97dc4187-0813-4e8f-a8fd-740a7abb4777",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "94c1d54b-8daa-4028-9804-410dbd9bc672",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Right",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "9ed1e6b7-712a-49ee-92a6-1954077a8093",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -123,8 +156,30 @@
                 },
                 {
                     "name": "",
-                    "id": "39550fff-d4f8-471a-b503-aa433c458b5b",
+                    "id": "eefa7cfa-492b-4f75-85d9-dd510e5c9e1f",
                     "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fefa7cfa-492b-4f75-85d9-dd510e5c9e20",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0efa7cfa-492b-4f75-85d9-dd510e5c9e21",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -145,8 +200,8 @@
                 },
                 {
                     "name": "",
-                    "id": "5ac47082-72fd-4154-af1a-3fe0e282da25",
-                    "path": "<Keyboard>/e",
+                    "id": "177ee23e-3fa1-4bf9-b429-2c857d332615",
+                    "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -167,8 +222,8 @@
                 },
                 {
                     "name": "",
-                    "id": "44361163-95b0-461a-bc38-93177bb8dd12",
-                    "path": "<Keyboard>/q",
+                    "id": "8c122962-a7fc-46e2-98d4-2d7caf8bb120",
+                    "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
