@@ -23,7 +23,7 @@ public class SceneManager : MonoBehaviour
     }
     public void AlleyWayScene()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Alleyway After Hours");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Alleyway");
     }
     public void ConcreteJungleParkScene()
     {

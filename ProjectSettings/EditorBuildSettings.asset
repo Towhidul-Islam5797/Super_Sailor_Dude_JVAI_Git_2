@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/_Scene/Level 1 DockSide.unity
     guid: f2d88d243d5af764dabc2409f6542acb
   - enabled: 1
-    path: Assets/_Scene/Level 2 Alleyway After Hours.unity
-    guid: 578bad4c2095f3e4db11e3eeea3845ef
+    path: Assets/_Scene/Level 2 Alleyway.unity
+    guid: 6f7d54ff58a6d07469f698bbc10b0b21
   - enabled: 1
     path: Assets/_Scene/Level 3 Concrete Jungle Park.unity
     guid: 647467f2fd47b9041a304fea0a37a488
