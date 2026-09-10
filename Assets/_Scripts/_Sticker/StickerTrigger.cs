@@ -1,67 +1,65 @@
-using System.Collections;
 using UnityEngine;
 
 public class StickerTrigger : MonoBehaviour
 {
-    [SerializeField] private string stickerId;
+    [Header("Sticker")]
+    [SerializeField] private string stickerID = "1";
+    [SerializeField] private Sprite stickerSprite;
 
-    [Header("Billboard Visual")]
-    [SerializeField] private SpriteRenderer billboardRenderer; // Drag the billboard SpriteRenderer here
-    [SerializeField] private Sprite billboardSticker;          // Drag the sticker sprite (1 copy, 2 copy etc.)
+    private bool alreadyTriggered = false;
 
-    private bool _triggered = false;
 
     private void Start()
     {
-        // Always show the sticker on the billboard from the start
-        if (billboardRenderer != null && billboardSticker != null)
+        // শুধু এই sticker-টাই আগে collect হয়েছে কিনা check করবে
+        if (StickerManager.Instance != null)
         {
-            billboardRenderer.sprite = billboardSticker;
-            Color c = billboardRenderer.color;
-            c.a = 1f;
-            billboardRenderer.color = c;
+            alreadyTriggered =
+                StickerManager.Instance.IsStickerCollected(stickerID);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (_triggered) return;
 
-        if (collision.CompareTag("PlayerBody"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (alreadyTriggered)
+            return;
+
+
+        // PlayerStateManager যেই parent/child-এ থাকুক খুঁজবে
+        PlayerStateManager player =
+            other.GetComponentInParent<PlayerStateManager>();
+
+
+        if (player == null)
+            return;
+
+
+        if (StickerManager.Instance == null)
         {
-            _triggered = true;
-
-            // Get the PlayerStateManager from the parent Player object
-            PlayerStateManager player = GameObject.FindGameObjectWithTag("Player")
-                .GetComponent<PlayerStateManager>();
-
-            if (player != null)
-            {
-                StartCoroutine(HandleStickerCollection(player));
-            }
-            else
-            {
-                // Fallback: just show sticker without freezing
-                StickerManager.Instance.CollectSticker(stickerId);
-            }
+            Debug.LogError("StickerManager not found!");
+            return;
         }
-    }
 
-    private IEnumerator HandleStickerCollection(PlayerStateManager player)
-    {
-        // Step 1: Freeze the player
+
+        Debug.Log(
+            "TRIGGERED STICKER: " + stickerID
+        );
+
+
+        // শুধু এই trigger বন্ধ হবে
+        alreadyTriggered = true;
+
+
+        // Player freeze
         player.FreezePlayer();
 
-        // Step 2: Brief pause (feels like the character "stops and looks")
-        yield return new WaitForSeconds(0.3f);
 
-        // Step 3: Trigger the sticker collection (shows popup + saves)
-        StickerManager.Instance.CollectSticker(stickerId);
-
-        // Step 4: Wait for the sticker popup to be visible
-        yield return new WaitForSeconds(1.5f);
-
-        // Step 5: Unfreeze player
-        player.UnfreezePlayer();
+        // এই trigger-এর নিজের sticker popup-এ যাবে
+        StickerManager.Instance.ShowStickerPopup(
+            stickerID,
+            stickerSprite,
+            player
+        );
     }
 }

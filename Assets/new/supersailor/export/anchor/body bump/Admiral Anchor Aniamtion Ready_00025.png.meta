@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: f68304d57a4f24347a97ec97424938b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1569347915234750744
+    second: Admiral Anchor Aniamtion Ready_00025_0
+  - first:
+      213: 6786349504041573434
+    second: Admiral Anchor Aniamtion Ready_00025_1
+  - first:
+      213: 4347677087792148658
+    second: Admiral Anchor Aniamtion Ready_00025_2
+  - first:
+      213: 4256217510026046919
+    second: Admiral Anchor Aniamtion Ready_00025_3
+  - first:
+      213: -7427160534897056340
+    second: Admiral Anchor Aniamtion Ready_00025_4
+  - first:
+      213: 9101823678485673963
+    second: Admiral Anchor Aniamtion Ready_00025_5
+  - first:
+      213: 5944362172748283901
+    second: Admiral Anchor Aniamtion Ready_00025_6
+  - first:
+      213: -3150277596792640093
+    second: Admiral Anchor Aniamtion Ready_00025_7
+  - first:
+      213: 275177317786325709
+    second: Admiral Anchor Aniamtion Ready_00025_8
+  - first:
+      213: 4452809941619000341
+    second: Admiral Anchor Aniamtion Ready_00025_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_0
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 275
+        width: 560
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eece67c26e883ae0800000000000000
+      internalID: -1569347915234750744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_1
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 610
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3cdb061be4fd2e50800000000000000
+      internalID: 6786349504041573434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_2
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 583
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0b4ffb64d065c30800000000000000
+      internalID: 4347677087792148658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_3
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 590
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd66e3664f111b30800000000000000
+      internalID: 4256217510026046919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_4
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 576
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca529a328dc6de890800000000000000
+      internalID: -7427160534897056340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_5
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 544
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7b06c796c205e70800000000000000
+      internalID: 9101823678485673963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_6
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 564
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff3eeac6ed9e7250800000000000000
+      internalID: 5944362172748283901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_7
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 526
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3adad437737f744d0800000000000000
+      internalID: -3150277596792640093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 516
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc216e40050a1d300800000000000000
+      internalID: 275177317786325709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Admiral Anchor Aniamtion Ready_00025_9
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 272
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5144786cc0f8bcd30800000000000000
+      internalID: 4452809941619000341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Admiral Anchor Aniamtion Ready_00025_0: -1569347915234750744
+      Admiral Anchor Aniamtion Ready_00025_1: 6786349504041573434
+      Admiral Anchor Aniamtion Ready_00025_2: 4347677087792148658
+      Admiral Anchor Aniamtion Ready_00025_3: 4256217510026046919
+      Admiral Anchor Aniamtion Ready_00025_4: -7427160534897056340
+      Admiral Anchor Aniamtion Ready_00025_5: 9101823678485673963
+      Admiral Anchor Aniamtion Ready_00025_6: 5944362172748283901
+      Admiral Anchor Aniamtion Ready_00025_7: -3150277596792640093
+      Admiral Anchor Aniamtion Ready_00025_8: 275177317786325709
+      Admiral Anchor Aniamtion Ready_00025_9: 4452809941619000341
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

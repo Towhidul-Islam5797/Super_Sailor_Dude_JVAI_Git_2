@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Punch
-  serializedVersion: 7
+  serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -29,7 +29,7 @@ AnimationClip:
     - time: 0.125
       value: {fileID: 6300066662258702866, guid: 4de9958a3c07f8b45ac5e7b18a339ee2, type: 3}
     - time: 0.16666667
-      value: {fileID: -4370557901179060265, guid: 7431ca427752a4d46a7cc7729564a94a, type: 3}
+      value: {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
     - time: 0.20833333
       value: {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
     - time: 0.25
@@ -83,12 +83,13 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+      metaData: 0
     pptrCurveMapping:
     - {fileID: 3788338134833184828, guid: ee93acb7e4d2bbe499162d7c1e9c3950, type: 3}
     - {fileID: 3839124661472051193, guid: 98087fc1eb42c2f42bc7afd4a8e71c35, type: 3}
     - {fileID: -5907383424675222972, guid: 84a03cc1903dccb44b698e043b0f1364, type: 3}
     - {fileID: 6300066662258702866, guid: 4de9958a3c07f8b45ac5e7b18a339ee2, type: 3}
-    - {fileID: -4370557901179060265, guid: 7431ca427752a4d46a7cc7729564a94a, type: 3}
+    - {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
     - {fileID: -6882055919230509362, guid: fc2b3f497353e764a90e5ca99b77453c, type: 3}
     - {fileID: 4037317827035799572, guid: b07409b5d47429643b5d206b6f22584c, type: 3}
     - {fileID: -2310789110609630488, guid: 0a28438ec5636ad46a2f5094cdcc4f49, type: 3}

@@ -1,28 +1,14 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class PlayerStateManager : MonoBehaviour
 {
-    //// State Variables
-    //PlayerBaseState currentState;
-    //public PlayerIdleState IdleState;
-    //public PlayerRunningState RunningState;
-    //public PlayerJumpingState JumpingState;
-    //public PlayerPunchState PunchState;
-    //public PlayerKickState KickState;
-
-    // Components
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public PlayerInput playerInput;
 
-
-    // Input Values
     [HideInInspector] public float moveInput;
     [HideInInspector] public bool jumpPressed;
-
-    // Hurt
     [HideInInspector] public bool isHurt;
     [HideInInspector] public bool isDead = false;
 
@@ -32,7 +18,7 @@ public class PlayerStateManager : MonoBehaviour
     [HideInInspector] public bool facingRight = true;
 
     [Header("Player Audio Settings")]
-    public AudioSource punchAuido;
+    public AudioSource punchAudio;
     public AudioSource jumpAudio;
 
     [Header("Movement Settings")]
@@ -40,55 +26,43 @@ public class PlayerStateManager : MonoBehaviour
 
     [Header("Ground Check")]
     public Transform groundCheck;
-    public float groundCheckRadious = 0.15f;
+    public float groundCheckRadius = 0.15f;
     public LayerMask groundLayer;
 
     [Header("Jump Settings")]
     public float jumpForce = 12f;
-    public float fallMultiplier;
-    [Space]
+    public float fallMultiplier = 2.5f;
 
     [Header("Health Settings")]
     public ParticleSystem healthPowerUp;
-    public int maxHealth;
+    public int maxHealth = 100;
     public int currentHealth;
-    public int healthToBoost;
+    public int healthToBoost = 20;
     public HealthBar healthBar;
-
-    [Space]
 
     [Header("Energy Settings")]
     public ParticleSystem energyPowerUp;
     public float energyNumber;
     public float energyToUpgrade;
     public TextMeshProUGUI energyText;
-    [Space]
-
-
-    [HideInInspector] public Vector2 vecGravity;
-    [HideInInspector] public bool isGrounded;
 
     [Header("Double Jump Settings")]
     public bool canDoubleJump = true;
     [HideInInspector] public bool hasDoubleJumped = false;
 
     [Header("Attack Cooldown Settings")]
-    public float attackCooldown = 0.25f; // minimum milliseconds delay between combo presses
+    public float attackCooldown = 0.25f;
     private float lastAttackTime = -10f;
 
-    #region Punch Variables
-    [Header("Punch Settings")]
+    [Header("Combat Colliders")]
     public Collider2D punchCollider;
-    [HideInInspector] public bool punchPressed;
-    #endregion
-
-    #region Kick Variables
-    [Header("Kick Settings")]
     public Collider2D kickCollider;
+    [HideInInspector] public bool punchPressed;
     [HideInInspector] public bool kickPressed;
-    #endregion
 
-
+    [HideInInspector] public Vector2 vecGravity;
+    [HideInInspector] public bool isGrounded;
+    public bool isFrozen = false;
 
     void Awake()
     {
@@ -100,21 +74,19 @@ public class PlayerStateManager : MonoBehaviour
     {
         vecGravity = new Vector2(0, -Physics2D.gravity.y);
 
-        // setting strings
-        energyText.text = energyNumber.ToString();
-
-        // Setting current health to maxhealth and setting healthbars max health to players maxhealth
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null) healthBar.SetMaxHealth(maxHealth);
 
-        punchCollider.enabled = false;
-        kickCollider.enabled = false;
+        UpdateEnergyUI();
+
+        if (punchCollider) punchCollider.enabled = false;
+        if (kickCollider) kickCollider.enabled = false;
         hasDoubleJumped = false;
     }
 
     void Update()
     {
-        if (isFrozen) return;
+        if (isFrozen || isDead) return;
 
         HandleFlip();
         SwitchState();
@@ -122,135 +94,84 @@ public class PlayerStateManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Continous Ground Check
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadious, groundLayer);
+        // Ground Check
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // মাটিতে পা ছোঁয়া মাত্রই ডাবল জাম্প রিসেট হয়ে যাবে
         if (isGrounded)
         {
             hasDoubleJumped = false;
-        }
 
-        // Prevent horizontal sliding when player is grounded and there is no input
-        if (isGrounded && moveInput == 0f)
-        {
-            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            // নো-ইনপুট থাকলে আনুভূমিক স্লিপ বন্ধ করা
+            if (moveInput == 0f)
+            {
+                rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+            }
         }
-
 
         GravityMultiplication();
     }
-
     public void SwitchState()
     {
         animator.SetBool("isGrounded_b", isGrounded);
+        animator.SetBool("run_b", moveInput != 0);
 
-        if (moveInput != 0)
-        {
-            animator.SetBool("run_b", true);
-        }
-        else
-        {
-            animator.SetBool("run_b", false);
-        }
         if (punchPressed)
         {
             animator.SetTrigger("Punch_t");
             punchPressed = false;
         }
+
         if (kickPressed)
         {
             animator.SetTrigger("Kick_t");
             kickPressed = false;
         }
-        if (jumpPressed == true)
-        {
-            if (isGrounded == true)
-            {
-                animator.SetTrigger("Jump_t");
-                jumpPressed = false;
-            }
-            else if (canDoubleJump && !hasDoubleJumped)
-            {
-                hasDoubleJumped = true;
-                animator.SetTrigger("Jump_t");
-                jumpPressed = false;
-            }
-            else
-            {
-                jumpPressed = false;
-            }
-        }
+
         if (isHurt)
         {
             animator.SetTrigger("Hurt_t");
             isHurt = false;
         }
-        if(currentHealth <= 0)
-        {
-            animator.SetTrigger("Die_t");
-            Die();
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Health Boost
-        if (collision.gameObject.CompareTag("Health"))
+        if (collision.CompareTag("Health"))
         {
-            healthPowerUp.Play();
+            if (healthPowerUp) healthPowerUp.Play();
 
-            // Boosting Player Health
-            currentHealth += healthToBoost;
-            healthBar.SetHealth(currentHealth);
-
-            // Deactivating The Health boost pick up
-            collision.gameObject.SetActive(false);
-        }
-
-        // Energy Boost
-        if (collision.gameObject.CompareTag("Energy"))
-        {
-            energyPowerUp.Play();
-            energyText.text = (energyNumber + energyToUpgrade).ToString();
+            // Max Health limit check
+            currentHealth = Mathf.Min(currentHealth + healthToBoost, maxHealth);
+            if (healthBar != null) healthBar.SetHealth(currentHealth);
 
             collision.gameObject.SetActive(false);
         }
 
-        if (collision.gameObject.CompareTag("Enemy Hit Box"))
+        if (collision.CompareTag("Energy"))
+        {
+            if (energyPowerUp) energyPowerUp.Play();
+            energyNumber += energyToUpgrade;
+            UpdateEnergyUI();
+
+            collision.gameObject.SetActive(false);
+        }
+
+        if (collision.CompareTag("Enemy Hit Box"))
         {
             PlayerTakeDamage(10);
         }
     }
 
-    #region GroundCheck Debug
-    private void OnDrawGizmosSelected()
-    {
-        if (!groundCheck)
-        {
-            return;
-        }
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadious);
-    }
-    #endregion
-
-    #region Gravity Multipliyer
     private void GravityMultiplication()
     {
-        // if the character moves down we increase speed
         if (rb.linearVelocity.y < 0)
         {
             rb.linearVelocity -= vecGravity * fallMultiplier * Time.fixedDeltaTime;
-            //Debug.Log("Gravity multiplication");
         }
     }
-    #endregion
 
-    #region Input Methodes
-    // Input Methodes
+    #region Input Handlers
     public void Move(InputAction.CallbackContext context)
     {
         if (isFrozen) return;
@@ -259,117 +180,109 @@ public class PlayerStateManager : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        // "Jump" (Button) from Player Input component
+        if (isFrozen || isDead) return;
+
         if (context.performed)
         {
-            jumpPressed = true;
-
+            // ১ম জাম্প: গ্রাউন্ডে থাকলে
+            if (isGrounded)
+            {
+                ApplyJump();
+                hasDoubleJumped = false; // ১ম জাম্প হলে ডাবল জাম্প বাকি থাকে
+            }
+            // ২য় জাম্প: হাওয়ায় থাকলে এবং ডাবল জাম্প না করে থাকলে
+            else if (canDoubleJump && !hasDoubleJumped)
+            {
+                ApplyJump();
+                hasDoubleJumped = true; // ডাবল জাম্প ব্যবহার হয়ে গেল
+            }
         }
-
-
     }
 
-    // Punch Input
+    private void ApplyJump()
+    {
+        // Y অক্ষের ভেলোসিটি রিমেট করে নতুন জাম্প ফোর্সে লাফাবে
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+        // জাম্প অ্যানিমেশন প্লে
+        animator.SetTrigger("Jump_t");
+
+        // জাম্প সাউন্ড (যদি থাকে)
+        if (jumpAudio != null) jumpAudio.Play();
+    }
+
     public void Punch(InputAction.CallbackContext context)
     {
         if (isFrozen || isDead) return;
-        if (context.performed)
+        if (context.performed && Time.time - lastAttackTime >= attackCooldown)
         {
-            if (Time.time - lastAttackTime >= attackCooldown)
-            {
-                punchPressed = true;
-                lastAttackTime = Time.time;
-            }
+            punchPressed = true;
+            lastAttackTime = Time.time;
         }
     }
 
     public void Kick(InputAction.CallbackContext context)
     {
         if (isFrozen || isDead) return;
-        if (context.performed)
+        if (context.performed && Time.time - lastAttackTime >= attackCooldown)
         {
-            if (Time.time - lastAttackTime >= attackCooldown)
-            {
-                kickPressed = true;
-                lastAttackTime = Time.time;
-            }
+            kickPressed = true;
+            lastAttackTime = Time.time;
         }
     }
     #endregion
 
-    #region Character Flip
+    #region Character Logic
     public void HandleFlip()
     {
-        if(isDead == false)
+        if ((moveInput > 0 && !facingRight) || (moveInput < 0 && facingRight))
         {
-            if (moveInput > 0 && !facingRight)
-            {
-                Flip();
-            }
-            else if (moveInput < 0 && facingRight)
-            {
-                Flip();
-            }
+            Flip();
         }
     }
 
     private void Flip()
     {
         facingRight = !facingRight;
-
         Vector3 scale = visualTransform.localScale;
         scale.x *= -1;
         visualTransform.localScale = scale;
     }
-    #endregion
 
-    #region Health Methods
     public void PlayerTakeDamage(int damage)
     {
-        if(currentHealth > 0)
+        if (isDead) return;
+
+        currentHealth -= damage;
+        if (healthBar != null) healthBar.SetHealth(currentHealth);
+
+        isHurt = true;
+
+        if (currentHealth <= 0)
         {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
+            currentHealth = 0;
+            animator.SetTrigger("Die_t");
+            Die();
         }
-        
     }
 
-    #endregion
-
-    #region Punch Animation Events
-    public void EnablePunchCollider()
-    {
-        punchCollider.enabled = true;
-    }
-
-    public void DisablePunchCollider()
-    {
-        punchCollider.enabled = false;
-
-    }
-    #endregion
-
-    #region Kick Animation Events
-    public void EnableKickCollider()
-    {
-        kickCollider.enabled = true;
-    }
-    public void DisableKickCollider()
-    {
-        kickCollider.enabled = false;
-    }
-    #endregion
-
-    #region Die
     public void Die()
     {
         isDead = true;
         Destroy(gameObject, 2f);
     }
+
+    private void UpdateEnergyUI()
+    {
+        if (energyText != null) energyText.text = energyNumber.ToString();
+    }
     #endregion
 
-    #region Sticker Freeze
-    public bool isFrozen = false;
+    #region Animation Events & Helpers
+    public void EnablePunchCollider() => punchCollider.enabled = true;
+    public void DisablePunchCollider() => punchCollider.enabled = false;
+    public void EnableKickCollider() => kickCollider.enabled = true;
+    public void DisableKickCollider() => kickCollider.enabled = false;
 
     public void FreezePlayer()
     {
@@ -383,11 +296,9 @@ public class PlayerStateManager : MonoBehaviour
     public void UnfreezePlayer()
     {
         isFrozen = false;
-        rb.gravityScale = 1f; // restore default gravity scale
+        rb.gravityScale = 1f;
     }
-    #endregion
 
-    #region Attack Cooldown Checks
     public bool IsAttacking()
     {
         if (animator == null) return false;
@@ -396,4 +307,11 @@ public class PlayerStateManager : MonoBehaviour
     }
     #endregion
 
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
 }

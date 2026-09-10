@@ -364,7 +364,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &25686459
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -421,6 +421,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &28766743
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,12 +604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 8
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &30323626
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -665,6 +665,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &32622805
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,7 +701,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &32622807
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -757,6 +758,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &35466870
 GameObject:
   m_ObjectHideFlags: 0
@@ -838,8 +840,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 46653036}
   ratBody: {fileID: 379544002}
-  rayOrigin: {fileID: 1980695279}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &46653036
 Animator:
@@ -977,8 +980,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 50839512}
   ratBody: {fileID: 993420522}
-  rayOrigin: {fileID: 2028462281}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &50839512
 Animator:
@@ -1116,8 +1120,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 51945982}
   ratBody: {fileID: 1203913254}
-  rayOrigin: {fileID: 314106391}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &51945982
 Animator:
@@ -1239,7 +1244,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &74533639
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1296,6 +1301,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &78353236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,7 +1373,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &78911144
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1424,6 +1430,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &84315821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +1664,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &88015414
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1714,6 +1721,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &89651801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,12 +1842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 3
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &89651806
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1896,6 +1903,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &93092826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,7 +1939,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &93092828
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1988,6 +1996,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &97202237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,8 +2109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 106721903}
   ratBody: {fileID: 1876085532}
-  rayOrigin: {fileID: 1142147021}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &106721903
 Animator:
@@ -2309,8 +2319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 122575406}
   ratBody: {fileID: 581975521}
-  rayOrigin: {fileID: 875981000}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &122575406
 Animator:
@@ -2540,7 +2551,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &123721545
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2597,6 +2608,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &129217913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2647,8 +2659,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 129217916}
   ratBody: {fileID: 1554387845}
-  rayOrigin: {fileID: 1689640549}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &129217916
 Animator:
@@ -2856,12 +2869,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 2
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &134497317
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2918,6 +2930,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &147808607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,7 +2966,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &147808609
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3010,6 +3023,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &149291763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,7 +3197,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &163084093
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3240,6 +3254,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &168891190
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3289,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &168891192
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3331,6 +3346,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &169906368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3451,7 +3467,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &173938849
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3508,6 +3524,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &186134680
 GameObject:
   m_ObjectHideFlags: 0
@@ -87537,31 +87554,43 @@ Tilemap:
       m_AllTileFlags: 1073741826
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 8214
+  - serializedVersion: 2
+    m_RefCount: 8214
     m_Data: {fileID: 11400000, guid: 6eee8f6ff7e106c468945e29f733684e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 0
+  - serializedVersion: 2
+    m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 564
+  - serializedVersion: 2
+    m_RefCount: 564
     m_Data: {fileID: 6937817954938267909, guid: 1683855d24963c94f8c90a7cd0a0c150, type: 3}
-  - m_RefCount: 53
+  - serializedVersion: 2
+    m_RefCount: 53
     m_Data: {fileID: -6470460504253458178, guid: 3a9ce6f71d2500c448a2a703def35270, type: 3}
-  - m_RefCount: 45
+  - serializedVersion: 2
+    m_RefCount: 45
     m_Data: {fileID: -855298285791758126, guid: cd6020b10a93fa2418f68c18fb196ad4, type: 3}
-  - m_RefCount: 6874
+  - serializedVersion: 2
+    m_RefCount: 6874
     m_Data: {fileID: 4130640169021434097, guid: e911d73af3148ce48aad23850701ee5c, type: 3}
-  - m_RefCount: 498
+  - serializedVersion: 2
+    m_RefCount: 498
     m_Data: {fileID: 8288426215254106694, guid: 603159b290e69a74c92171b48f117b81, type: 3}
-  - m_RefCount: 76
+  - serializedVersion: 2
+    m_RefCount: 76
     m_Data: {fileID: -4178046375966092550, guid: a89faf7aad01d3a4cbc3eff2d0566004, type: 3}
-  - m_RefCount: 72
+  - serializedVersion: 2
+    m_RefCount: 72
     m_Data: {fileID: 3465286685962602723, guid: 485c76279fe3c7840be6667be4bf1ada, type: 3}
-  - m_RefCount: 14
+  - serializedVersion: 2
+    m_RefCount: 14
     m_Data: {fileID: 4113829005332862926, guid: 400a373e5711c0d499fc4294da6460f6, type: 3}
-  - m_RefCount: 18
+  - serializedVersion: 2
+    m_RefCount: 18
     m_Data: {fileID: 7028616704906629411, guid: ccaad888dcefa6749bcdbde10d6a691d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 8214
+  - serializedVersion: 2
+    m_RefCount: 8214
     m_Data:
       e00: 1
       e01: 0
@@ -87580,7 +87609,8 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 8214
+  - serializedVersion: 2
+    m_RefCount: 8214
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -87748,7 +87778,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &201519079
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87805,6 +87835,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &206434516
 GameObject:
   m_ObjectHideFlags: 0
@@ -87855,8 +87886,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 206434519}
   ratBody: {fileID: 1902553602}
-  rayOrigin: {fileID: 1309549124}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &206434519
 Animator:
@@ -87994,8 +88026,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 218671001}
   ratBody: {fileID: 1764037134}
-  rayOrigin: {fileID: 924662636}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &218671001
 Animator:
@@ -88118,7 +88151,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &227181258
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88175,6 +88208,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &232682625
 GameObject:
   m_ObjectHideFlags: 0
@@ -88209,7 +88243,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &232682627
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88266,6 +88300,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &235888583
 GameObject:
   m_ObjectHideFlags: 0
@@ -88443,8 +88478,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 261904130}
   ratBody: {fileID: 789860258}
-  rayOrigin: {fileID: 2078927810}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &261904130
 Animator:
@@ -88674,7 +88710,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &262722570
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88731,6 +88767,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &266296990
 GameObject:
   m_ObjectHideFlags: 0
@@ -88951,7 +88988,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &271542893
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89008,6 +89045,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &275570233
 GameObject:
   m_ObjectHideFlags: 0
@@ -89186,7 +89224,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &277378615
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89243,6 +89281,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &281235799
 GameObject:
   m_ObjectHideFlags: 0
@@ -89422,8 +89461,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 292970946}
   ratBody: {fileID: 1219700388}
-  rayOrigin: {fileID: 1826171506}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &292970946
 Animator:
@@ -89546,7 +89586,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &293833064
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89603,6 +89643,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &314106390
 GameObject:
   m_ObjectHideFlags: 0
@@ -89669,7 +89710,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &321588837
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89726,6 +89767,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &330765863
 GameObject:
   m_ObjectHideFlags: 0
@@ -89776,8 +89818,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 330765866}
   ratBody: {fileID: 1218034373}
-  rayOrigin: {fileID: 1037204156}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &330765866
 Animator:
@@ -89884,7 +89927,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &340207577
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89941,6 +89984,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &340207578
 Transform:
   m_ObjectHideFlags: 0
@@ -90066,7 +90110,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &358985105
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90123,6 +90167,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &366746871
 GameObject:
   m_ObjectHideFlags: 0
@@ -90243,12 +90288,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 5
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &366746876
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90305,6 +90349,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &379393185
 GameObject:
   m_ObjectHideFlags: 0
@@ -90371,7 +90416,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &379544003
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90428,6 +90473,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &385311425
 GameObject:
   m_ObjectHideFlags: 0
@@ -90497,7 +90543,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &388558719
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90554,6 +90600,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &390889208
 GameObject:
   m_ObjectHideFlags: 0
@@ -90635,8 +90682,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 393497585}
   ratBody: {fileID: 1368582273}
-  rayOrigin: {fileID: 169906369}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &393497585
 Animator:
@@ -90793,7 +90841,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &396510190
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90850,6 +90898,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &407512762
 GameObject:
   m_ObjectHideFlags: 0
@@ -90900,8 +90949,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 407512765}
   ratBody: {fileID: 787660186}
-  rayOrigin: {fileID: 1453997896}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &407512765
 Animator:
@@ -91187,7 +91237,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &421314702
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91244,6 +91294,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &426475799
 GameObject:
   m_ObjectHideFlags: 0
@@ -91468,8 +91519,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 431702108}
   ratBody: {fileID: 93092827}
-  rayOrigin: {fileID: 1775563634}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &431702108
 Animator:
@@ -91699,7 +91751,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &433609741
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91756,6 +91808,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &437945675
 GameObject:
   m_ObjectHideFlags: 0
@@ -91791,7 +91844,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &437945677
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -91848,6 +91901,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &439459949
 GameObject:
   m_ObjectHideFlags: 0
@@ -91984,8 +92038,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 439459953}
   ratBody: {fileID: 1700895924}
-  rayOrigin: {fileID: 1969372146}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!1 &442186020
 GameObject:
@@ -92160,7 +92215,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &445983840
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92217,6 +92272,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &448962323
 GameObject:
   m_ObjectHideFlags: 0
@@ -92251,7 +92307,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &448962325
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92308,6 +92364,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &451462994
 GameObject:
   m_ObjectHideFlags: 0
@@ -92343,7 +92400,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &451462996
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92400,6 +92457,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &454529188
 GameObject:
   m_ObjectHideFlags: 0
@@ -92498,8 +92556,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 454983443}
   ratBody: {fileID: 358985104}
-  rayOrigin: {fileID: 442186021}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &454983443
 Animator:
@@ -92622,7 +92681,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &459908614
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92679,6 +92738,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &467962287
 GameObject:
   m_ObjectHideFlags: 0
@@ -92861,12 +92921,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 7
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &470751489
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92923,6 +92982,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &476022259
 GameObject:
   m_ObjectHideFlags: 0
@@ -93004,8 +93064,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 485486272}
   ratBody: {fileID: 1188631959}
-  rayOrigin: {fileID: 864519895}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &485486272
 Animator:
@@ -93128,7 +93189,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &508199411
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93185,6 +93246,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -93390,7 +93452,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &534257990
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93447,6 +93509,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &539564317 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1700366178182199689, guid: f3112f8898f06fa4bbe8be95e7c6521b, type: 3}
@@ -93618,7 +93681,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &574391140
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93675,6 +93738,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &581975520
 GameObject:
   m_ObjectHideFlags: 0
@@ -93710,7 +93774,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &581975522
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -93767,6 +93831,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &583296165
 GameObject:
   m_ObjectHideFlags: 0
@@ -93879,8 +93944,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 593742969}
   ratBody: {fileID: 437945676}
-  rayOrigin: {fileID: 1732810357}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &593742969
 Animator:
@@ -94003,7 +94069,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &600420546
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94060,6 +94126,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &605268596
 GameObject:
   m_ObjectHideFlags: 0
@@ -94095,7 +94162,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &605268598
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94152,6 +94219,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &617671313
 GameObject:
   m_ObjectHideFlags: 0
@@ -94186,7 +94254,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &617671315
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94243,6 +94311,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -94272,9 +94341,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
+  m_ComponentVersion: 4
   m_LightType: 4
   m_BlendStyleIndex: 0
+  m_Light2DProvider:
+    rid: -2
+  m_SelectionSources:
+    rid: 5520875687826161783
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
@@ -94312,6 +94385,19 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5520875687826161783
+      type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_SelectedHashCode: 4
+        m_SelectedSource:
+          rid: -2
+        m_Provider2DCache:
+          rid: -2
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -94377,8 +94463,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 621696016}
   ratBody: {fileID: 1338729368}
-  rayOrigin: {fileID: 414442551}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &621696016
 Animator:
@@ -94608,7 +94695,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &635871955
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94665,6 +94752,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &645820329
 GameObject:
   m_ObjectHideFlags: 0
@@ -94700,7 +94788,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &645820331
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94757,6 +94845,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &666152673
 GameObject:
   m_ObjectHideFlags: 0
@@ -94791,7 +94880,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &666152675
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94848,6 +94937,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &678704479
 GameObject:
   m_ObjectHideFlags: 0
@@ -94930,8 +95020,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 696645349}
   ratBody: {fileID: 1163130880}
-  rayOrigin: {fileID: 266296991}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &696645349
 Animator:
@@ -95054,7 +95145,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &696999470
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95111,6 +95202,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &699855091
 GameObject:
   m_ObjectHideFlags: 0
@@ -95145,7 +95237,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &699855093
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95202,6 +95294,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &700547102
 GameObject:
   m_ObjectHideFlags: 0
@@ -95252,8 +95345,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 700547105}
   ratBody: {fileID: 1867621277}
-  rayOrigin: {fileID: 1635359204}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &700547105
 Animator:
@@ -95497,8 +95591,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 729261181}
   ratBody: {fileID: 1127919084}
-  rayOrigin: {fileID: 1622861765}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &729261181
 Animator:
@@ -95686,8 +95781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 750829854}
   ratBody: {fileID: 1150253843}
-  rayOrigin: {fileID: 149291764}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &750829854
 Animator:
@@ -95841,8 +95937,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 751005726}
   ratBody: {fileID: 173938848}
-  rayOrigin: {fileID: 709630081}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &751005726
 Animator:
@@ -96070,7 +96167,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &776381409
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96127,6 +96224,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &785340920
 GameObject:
   m_ObjectHideFlags: 0
@@ -96177,8 +96275,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 785340923}
   ratBody: {fileID: 1160218843}
-  rayOrigin: {fileID: 281235800}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &785340923
 Animator:
@@ -96301,7 +96400,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &787660187
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96358,6 +96457,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &789860257
 GameObject:
   m_ObjectHideFlags: 0
@@ -96393,7 +96493,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &789860259
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96450,6 +96550,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &791256527
 GameObject:
   m_ObjectHideFlags: 0
@@ -96644,8 +96745,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 812949357}
   ratBody: {fileID: 227181257}
-  rayOrigin: {fileID: 858980231}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &812949357
 Animator:
@@ -96845,7 +96947,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!212 &816796643
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -96902,6 +97004,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &816796644
 Transform:
   m_ObjectHideFlags: 0
@@ -97037,12 +97140,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 10
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &822284938
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97099,6 +97201,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &822665067
 GameObject:
   m_ObjectHideFlags: 0
@@ -97209,7 +97312,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &826585372
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97266,6 +97369,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &827631116
 GameObject:
   m_ObjectHideFlags: 0
@@ -97347,8 +97451,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 832719295}
   ratBody: {fileID: 1139867076}
-  rayOrigin: {fileID: 1468028410}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &832719295
 Animator:
@@ -97486,8 +97591,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 843042252}
   ratBody: {fileID: 1222618798}
-  rayOrigin: {fileID: 35466871}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &843042252
 Animator:
@@ -97594,7 +97700,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &843143681
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97651,6 +97757,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &843143682
 Transform:
   m_ObjectHideFlags: 0
@@ -97701,7 +97808,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &847597730
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97758,6 +97865,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &848962090
 GameObject:
   m_ObjectHideFlags: 0
@@ -97915,8 +98023,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 850715907}
   ratBody: {fileID: 451462995}
-  rayOrigin: {fileID: 467962288}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &850715907
 Animator:
@@ -98129,8 +98238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 858142661}
   ratBody: {fileID: 1159358209}
-  rayOrigin: {fileID: 745613584}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &858142661
 Animator:
@@ -98369,12 +98479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 9
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &859992551
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98431,6 +98540,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &864519894
 GameObject:
   m_ObjectHideFlags: 0
@@ -98497,7 +98607,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &864919933
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98554,6 +98664,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &867086789
 GameObject:
   m_ObjectHideFlags: 0
@@ -98589,7 +98700,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &867086791
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98646,6 +98757,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &868834971
 GameObject:
   m_ObjectHideFlags: 0
@@ -98727,8 +98839,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 873773261}
   ratBody: {fileID: 1434952771}
-  rayOrigin: {fileID: 1867091294}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &873773261
 Animator:
@@ -99135,7 +99248,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &884517136
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99192,6 +99305,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &885598458
 GameObject:
   m_ObjectHideFlags: 0
@@ -99455,8 +99569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 898675814}
   ratBody: {fileID: 2089458549}
-  rayOrigin: {fileID: 583296166}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &898675814
 Animator:
@@ -99664,12 +99779,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 6
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &900835015
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -99726,6 +99840,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &905834974
 GameObject:
   m_ObjectHideFlags: 0
@@ -99776,8 +99891,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 905834977}
   ratBody: {fileID: 600420545}
-  rayOrigin: {fileID: 106285141}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &905834977
 Animator:
@@ -100103,7 +100219,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &941637366
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100160,6 +100276,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &947263065
 GameObject:
   m_ObjectHideFlags: 0
@@ -100210,8 +100327,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 947263068}
   ratBody: {fileID: 1099274082}
-  rayOrigin: {fileID: 468848245}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &947263068
 Animator:
@@ -100449,8 +100567,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 964829200}
   ratBody: {fileID: 459908613}
-  rayOrigin: {fileID: 282167441}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &964829200
 Animator:
@@ -100573,7 +100692,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &968506240
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100630,6 +100749,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &973803070
 GameObject:
   m_ObjectHideFlags: 0
@@ -100680,8 +100800,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 973803073}
   ratBody: {fileID: 1719067871}
-  rayOrigin: {fileID: 567700258}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &973803073
 Animator:
@@ -100897,8 +101018,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 990204799}
   ratBody: {fileID: 1456928857}
-  rayOrigin: {fileID: 1566366762}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &990204799
 Animator:
@@ -101021,7 +101143,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &993420523
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101078,6 +101200,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1011412905
 GameObject:
   m_ObjectHideFlags: 0
@@ -101128,8 +101251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1011412908}
   ratBody: {fileID: 2017689935}
-  rayOrigin: {fileID: 1059862877}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1011412908
 Animator:
@@ -101421,7 +101545,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1038666637
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101478,6 +101602,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1041771897
 GameObject:
   m_ObjectHideFlags: 0
@@ -101620,7 +101745,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1041771903
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101677,6 +101802,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1045900412
 GameObject:
   m_ObjectHideFlags: 0
@@ -101711,7 +101837,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1045900414
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101768,6 +101894,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1050221155
 GameObject:
   m_ObjectHideFlags: 0
@@ -101803,7 +101930,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1050221157
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101860,6 +101987,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1059348231
 GameObject:
   m_ObjectHideFlags: 0
@@ -101980,12 +102108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 11
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &1059348236
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102042,6 +102169,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1059862876
 GameObject:
   m_ObjectHideFlags: 0
@@ -102174,7 +102302,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1099274083
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102231,6 +102359,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1112368862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7650282764568802948, guid: f3112f8898f06fa4bbe8be95e7c6521b, type: 3}
@@ -102317,8 +102446,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1118460111}
   ratBody: {fileID: 321588836}
-  rayOrigin: {fileID: 28766744}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1118460111
 Animator:
@@ -102441,7 +102571,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1127919085
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102498,6 +102628,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1139867075
 GameObject:
   m_ObjectHideFlags: 0
@@ -102533,7 +102664,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1139867077
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102590,6 +102721,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1142147020
 GameObject:
   m_ObjectHideFlags: 0
@@ -102687,7 +102819,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1150253844
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102744,6 +102876,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1158270192
 GameObject:
   m_ObjectHideFlags: 0
@@ -102779,7 +102912,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1158270194
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102836,6 +102969,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1159358208
 GameObject:
   m_ObjectHideFlags: 0
@@ -102871,7 +103005,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1159358210
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102928,6 +103062,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1160218842
 GameObject:
   m_ObjectHideFlags: 0
@@ -102963,7 +103098,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1160218844
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103020,6 +103155,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1163130879
 GameObject:
   m_ObjectHideFlags: 0
@@ -103055,7 +103191,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1163130881
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103112,6 +103248,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1163171020
 GameObject:
   m_ObjectHideFlags: 0
@@ -103147,7 +103284,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1163171022
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103204,6 +103341,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1170176935 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5398601360430923314, guid: 39483cf8bdfab7e40889ac597cde058d, type: 3}
@@ -103211,7 +103349,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!212 &1170176940
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103268,6 +103406,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1170272437
 GameObject:
   m_ObjectHideFlags: 0
@@ -103393,8 +103532,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1178679028}
   ratBody: {fileID: 78911143}
-  rayOrigin: {fileID: 1725690065}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1178679028
 Animator:
@@ -103517,7 +103657,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1180023518
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103574,6 +103714,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1188631958
 GameObject:
   m_ObjectHideFlags: 0
@@ -103609,7 +103750,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1188631960
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103666,6 +103807,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1193348978
 GameObject:
   m_ObjectHideFlags: 0
@@ -103700,7 +103842,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1193348980
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103757,6 +103899,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1203913253
 GameObject:
   m_ObjectHideFlags: 0
@@ -103792,7 +103935,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1203913255
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -103849,6 +103992,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1215459606
 GameObject:
   m_ObjectHideFlags: 0
@@ -103991,7 +104135,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1215459612
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104048,6 +104192,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1218034372
 GameObject:
   m_ObjectHideFlags: 0
@@ -104083,7 +104228,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1218034374
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104140,6 +104285,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1219700387
 GameObject:
   m_ObjectHideFlags: 0
@@ -104175,7 +104321,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1219700389
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104232,6 +104378,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1221165977
 GameObject:
   m_ObjectHideFlags: 0
@@ -104266,7 +104413,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1221165979
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104323,6 +104470,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1222618797
 GameObject:
   m_ObjectHideFlags: 0
@@ -104358,7 +104506,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1222618799
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104415,6 +104563,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1223300296
 GameObject:
   m_ObjectHideFlags: 0
@@ -104525,7 +104674,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1246897052
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104582,6 +104731,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1264250612
 GameObject:
   m_ObjectHideFlags: 0
@@ -104617,7 +104767,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1264250614
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104674,6 +104824,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1265133824
 GameObject:
   m_ObjectHideFlags: 0
@@ -104862,7 +105013,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1271676803
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -104919,6 +105070,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1274385761
 GameObject:
   m_ObjectHideFlags: 0
@@ -104953,7 +105105,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1274385763
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105010,6 +105162,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1276969501
 GameObject:
   m_ObjectHideFlags: 0
@@ -105060,8 +105213,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1276969504}
   ratBody: {fileID: 1490949451}
-  rayOrigin: {fileID: 1607194834}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1276969504
 Animator:
@@ -105334,8 +105488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1323726816}
   ratBody: {fileID: 1934145853}
-  rayOrigin: {fileID: 1116349479}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1323726816
 Animator:
@@ -105473,8 +105628,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1327034257}
   ratBody: {fileID: 1246897051}
-  rayOrigin: {fileID: 1694206493}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1327034257
 Animator:
@@ -105612,8 +105768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1335693422}
   ratBody: {fileID: 1459968636}
-  rayOrigin: {fileID: 882994886}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1335693422
 Animator:
@@ -105736,7 +105893,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1338729369
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105793,6 +105950,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1339223762
 GameObject:
   m_ObjectHideFlags: 0
@@ -105843,8 +106001,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1339223765}
   ratBody: {fileID: 864919932}
-  rayOrigin: {fileID: 1312448884}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1339223765
 Animator:
@@ -105982,8 +106141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1343546859}
   ratBody: {fileID: 1576059057}
-  rayOrigin: {fileID: 1769183677}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1343546859
 Animator:
@@ -106105,7 +106265,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1346547500
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106162,6 +106322,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1352246220
 GameObject:
   m_ObjectHideFlags: 0
@@ -106304,7 +106465,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1352246226
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106361,6 +106522,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1353466437
 GameObject:
   m_ObjectHideFlags: 0
@@ -106395,7 +106557,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1353466439
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106452,6 +106614,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1367697226
 GameObject:
   m_ObjectHideFlags: 0
@@ -106502,8 +106665,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1367697229}
   ratBody: {fileID: 1788871155}
-  rayOrigin: {fileID: 1836534557}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1367697229
 Animator:
@@ -106626,7 +106790,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1368582274
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106683,6 +106847,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1381620636
 GameObject:
   m_ObjectHideFlags: 0
@@ -106718,7 +106883,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1381620638
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -106775,6 +106940,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1393235729
 GameObject:
   m_ObjectHideFlags: 0
@@ -106931,8 +107097,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1399564784}
   ratBody: {fileID: 826585371}
-  rayOrigin: {fileID: 476022260}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1399564784
 Animator:
@@ -107054,7 +107221,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1400991876
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107111,6 +107278,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1401915987
 GameObject:
   m_ObjectHideFlags: 0
@@ -107161,8 +107329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1401915990}
   ratBody: {fileID: 1264250613}
-  rayOrigin: {fileID: 390889209}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1401915990
 Animator:
@@ -107351,7 +107520,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1432016262
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107408,6 +107577,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1433906902
 GameObject:
   m_ObjectHideFlags: 0
@@ -107490,7 +107660,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1434952772
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107547,6 +107717,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1453997895
 GameObject:
   m_ObjectHideFlags: 0
@@ -107613,7 +107784,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1456928858
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107670,6 +107841,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1459968635
 GameObject:
   m_ObjectHideFlags: 0
@@ -107705,7 +107877,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1459968637
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107762,6 +107934,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1464923322
 GameObject:
   m_ObjectHideFlags: 0
@@ -107796,7 +107969,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1464923324
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107853,6 +108026,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1465933036
 GameObject:
   m_ObjectHideFlags: 0
@@ -107978,8 +108152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1467762528}
   ratBody: {fileID: 1050221156}
-  rayOrigin: {fileID: 768117065}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1467762528
 Animator:
@@ -108142,6 +108317,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -4.7438025
       objectReference: {fileID: 0}
+    - target: {fileID: 7077836594004490339, guid: 93dbce1c7128be444b9a23f6106d0dd2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.829
+      objectReference: {fileID: 0}
     - target: {fileID: 7999751525576447810, guid: 93dbce1c7128be444b9a23f6106d0dd2, type: 3}
       propertyPath: m_Size.y
       value: 3.58852
@@ -108282,7 +108461,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1490949452
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108339,6 +108518,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1503188719
 GameObject:
   m_ObjectHideFlags: 0
@@ -108516,8 +108696,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1505551214}
   ratBody: {fileID: 1381620637}
-  rayOrigin: {fileID: 1567829104}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1505551214
 Animator:
@@ -108624,7 +108805,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &1509029413
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108681,6 +108862,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1509029414
 Transform:
   m_ObjectHideFlags: 0
@@ -108746,8 +108928,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1517084808}
   ratBody: {fileID: 605268597}
-  rayOrigin: {fileID: 1026031847}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1517084808
 Animator:
@@ -108960,8 +109143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1532076513}
   ratBody: {fileID: 1859043437}
-  rayOrigin: {fileID: 97202238}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1532076513
 Animator:
@@ -109083,7 +109267,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1549932412
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109140,6 +109324,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1554387844
 GameObject:
   m_ObjectHideFlags: 0
@@ -109175,7 +109360,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1554387846
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109232,6 +109417,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1566366761
 GameObject:
   m_ObjectHideFlags: 0
@@ -109329,7 +109515,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1576059058
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109386,6 +109572,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1581135938
 GameObject:
   m_ObjectHideFlags: 0
@@ -109405,7 +109592,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &1581135939
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109462,6 +109649,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1581135940
 Transform:
   m_ObjectHideFlags: 0
@@ -109512,7 +109700,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1586990140
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109569,6 +109757,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1596163074
 GameObject:
   m_ObjectHideFlags: 0
@@ -109838,7 +110027,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1627859721
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109895,6 +110084,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1627859722
 Transform:
   m_ObjectHideFlags: 0
@@ -110079,12 +110269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 4
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &1635505783
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110141,6 +110330,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1641188075
 GameObject:
   m_ObjectHideFlags: 0
@@ -110212,7 +110402,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1655180330
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110269,6 +110459,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1687841682
 GameObject:
   m_ObjectHideFlags: 0
@@ -110478,7 +110669,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1700895925
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110535,6 +110726,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1705623755
 GameObject:
   m_ObjectHideFlags: 0
@@ -110585,8 +110777,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1705623758}
   ratBody: {fileID: 1180023517}
-  rayOrigin: {fileID: 1092780656}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1705623758
 Animator:
@@ -110709,7 +110902,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1719067872
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110766,6 +110959,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1722543418
 GameObject:
   m_ObjectHideFlags: 0
@@ -110800,8 +110994,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1722543420}
   ratBody: {fileID: 1954572851}
-  rayOrigin: {fileID: 1279854803}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1722543420
 Animator:
@@ -111063,7 +111258,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1757804854
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111120,6 +111315,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1764037133
 GameObject:
   m_ObjectHideFlags: 0
@@ -111155,7 +111351,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1764037135
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111212,6 +111408,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1764853091
 GameObject:
   m_ObjectHideFlags: 0
@@ -111339,8 +111536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1765428265}
   ratBody: {fileID: 147808608}
-  rayOrigin: {fileID: 868834972}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1765428265
 Animator:
@@ -111509,8 +111707,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1771656221}
   ratBody: {fileID: 1962996766}
-  rayOrigin: {fileID: 827631117}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1771656221
 Animator:
@@ -111632,7 +111831,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1773755387
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111689,6 +111888,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1775563633
 GameObject:
   m_ObjectHideFlags: 0
@@ -111770,8 +111970,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1780992962}
   ratBody: {fileID: 1163171021}
-  rayOrigin: {fileID: 292909111}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1780992962
 Animator:
@@ -111894,7 +112095,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1788871156
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -111951,6 +112152,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1789660707
 GameObject:
   m_ObjectHideFlags: 0
@@ -112219,7 +112421,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1799699432
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112276,6 +112478,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1810701261
 GameObject:
   m_ObjectHideFlags: 0
@@ -112346,7 +112549,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1811081764
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112403,6 +112606,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1814958258
 GameObject:
   m_ObjectHideFlags: 0
@@ -112438,7 +112642,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1814958260
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -112495,6 +112699,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1826171505
 GameObject:
   m_ObjectHideFlags: 0
@@ -112576,8 +112781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1826470389}
   ratBody: {fileID: 847597729}
-  rayOrigin: {fileID: 791256528}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1826470389
 Animator:
@@ -112715,8 +112921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1833162285}
   ratBody: {fileID: 508199410}
-  rayOrigin: {fileID: 1611446606}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1833162285
 Animator:
@@ -112885,8 +113092,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1836639947}
   ratBody: {fileID: 1909037900}
-  rayOrigin: {fileID: 84315822}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1836639947
 Animator:
@@ -113024,8 +113232,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1844493857}
   ratBody: {fileID: 1158270193}
-  rayOrigin: {fileID: 1147758997}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1844493857
 Animator:
@@ -113148,7 +113357,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1859043438
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113205,6 +113414,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1862117441
 GameObject:
   m_ObjectHideFlags: 0
@@ -113239,7 +113449,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1862117443
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113296,6 +113506,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1867091293
 GameObject:
   m_ObjectHideFlags: 0
@@ -113362,7 +113573,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1867621278
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113419,6 +113630,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1876085531
 GameObject:
   m_ObjectHideFlags: 0
@@ -113454,7 +113666,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1876085533
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113511,6 +113723,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1885840377
 GameObject:
   m_ObjectHideFlags: 0
@@ -113616,12 +113829,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e284a81517fdfd64294731fe923dbed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StickerTrigger
-  stickerId: 1
-  billboardRenderer: {fileID: 0}
-  billboardSticker: {fileID: 0}
+  stickerID: 1
+  stickerSprite: {fileID: 0}
 --- !u!212 &1885840381
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113678,6 +113890,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &1885840382
 Transform:
   m_ObjectHideFlags: 0
@@ -113743,8 +113956,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1889329662}
   ratBody: {fileID: 574391139}
-  rayOrigin: {fileID: 593018013}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1889329662
 Animator:
@@ -113882,8 +114096,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1898057083}
   ratBody: {fileID: 1814958259}
-  rayOrigin: {fileID: 87892273}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1898057083
 Animator:
@@ -114063,7 +114278,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1902553603
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114120,6 +114335,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1909037899
 GameObject:
   m_ObjectHideFlags: 0
@@ -114155,7 +114371,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1909037901
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114212,6 +114428,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1912196559
 GameObject:
   m_ObjectHideFlags: 0
@@ -114262,8 +114479,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1912196562}
   ratBody: {fileID: 534257989}
-  rayOrigin: {fileID: 937904261}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1912196562
 Animator:
@@ -114401,8 +114619,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1917289520}
   ratBody: {fileID: 32622806}
-  rayOrigin: {fileID: 2016771279}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1917289520
 Animator:
@@ -114561,7 +114780,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1934145854
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114618,6 +114837,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1936428559
 GameObject:
   m_ObjectHideFlags: 0
@@ -114688,7 +114908,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1954572852
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114745,6 +114965,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1960080592
 GameObject:
   m_ObjectHideFlags: 0
@@ -114907,7 +115128,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1962996767
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114964,6 +115185,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1969372145
 GameObject:
   m_ObjectHideFlags: 0
@@ -115045,8 +115267,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 1971707419}
   ratBody: {fileID: 696999469}
-  rayOrigin: {fileID: 379393186}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &1971707419
 Animator:
@@ -115444,7 +115667,7 @@ Rigidbody2D:
   m_Constraints: 0
 --- !u!212 &1991573379
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -115501,6 +115724,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1996799722
 GameObject:
   m_ObjectHideFlags: 0
@@ -115646,7 +115870,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2017689936
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -115703,6 +115927,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2027321974
 GameObject:
   m_ObjectHideFlags: 0
@@ -115753,8 +115978,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2027321977}
   ratBody: {fileID: 1655180329}
-  rayOrigin: {fileID: 1393235730}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2027321977
 Animator:
@@ -115923,8 +116149,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2029168678}
   ratBody: {fileID: 645820330}
-  rayOrigin: {fileID: 726704432}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2029168678
 Animator:
@@ -116062,8 +116289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2030126613}
   ratBody: {fileID: 293833063}
-  rayOrigin: {fileID: 29910598}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2030126613
 Animator:
@@ -116201,8 +116429,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2032266059}
   ratBody: {fileID: 867086790}
-  rayOrigin: {fileID: 921542789}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2032266059
 Animator:
@@ -116324,7 +116553,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2040711337
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116381,6 +116610,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2051911261
 GameObject:
   m_ObjectHideFlags: 0
@@ -116400,7 +116630,7 @@ GameObject:
   m_IsActive: 1
 --- !u!212 &2051911262
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116457,6 +116687,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!4 &2051911263
 Transform:
   m_ObjectHideFlags: 0
@@ -116553,8 +116784,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2058526827}
   ratBody: {fileID: 1586990139}
-  rayOrigin: {fileID: 1744022885}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2058526827
 Animator:
@@ -116681,7 +116913,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2064005530
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116738,6 +116970,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2078927809
 GameObject:
   m_ObjectHideFlags: 0
@@ -116804,7 +117037,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2089458550
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -116861,6 +117094,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2092981177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5735609304831962753, guid: 93dbce1c7128be444b9a23f6106d0dd2, type: 3}
@@ -116949,7 +117183,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2115055575
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117006,6 +117240,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2115227910
 GameObject:
   m_ObjectHideFlags: 0
@@ -117056,8 +117291,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2115227913}
   ratBody: {fileID: 1811081763}
-  rayOrigin: {fileID: 2052121421}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2115227913
 Animator:
@@ -117226,7 +117462,7 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!212 &2127126625
 SpriteRenderer:
-  serializedVersion: 2
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -117283,6 +117519,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &2135577925
 GameObject:
   m_ObjectHideFlags: 0
@@ -117369,8 +117606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DockRat
   animator: {fileID: 2136709307}
   ratBody: {fileID: 968506239}
-  rayOrigin: {fileID: 1608568899}
-  length: 0.3
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2
   isFlipped: 0
 --- !u!95 &2136709307
 Animator:
@@ -117489,30 +117727,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StickerManager
   stickers:
   - id: 1
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 2
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 3
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 4
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 5
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 6
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 7
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 8
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 9
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 10
-    stickerSprite: {fileID: 0}
+    sprite: {fileID: 0}
   - id: 11
-    stickerSprite: {fileID: 0}
-  stickerPopupPanel: {fileID: 1764853091}
-  stickerPopupImage: {fileID: 1170272439}
-  popupDuration: 1.5
+    sprite: {fileID: 0}
+  popup: {fileID: 0}
+  popupImage: {fileID: 0}
   stickerBookPanel: {fileID: 0}
   stickerSlots: []
 --- !u!4 &2144266638
@@ -119612,6 +119849,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -120091,6 +120329,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+    m_Priority: 0
   m_PointerMoveAction:
     m_Name: 
     m_Type: 0
@@ -120100,6 +120339,7 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings: []
     m_Flags: 0
+    m_Priority: 0
 --- !u!222 &7969414438814911212
 CanvasRenderer:
   m_ObjectHideFlags: 0

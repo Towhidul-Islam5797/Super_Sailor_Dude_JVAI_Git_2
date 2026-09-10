@@ -18,6 +18,12 @@ TagManager:
   - CaptainBodyBumpHit
   - PlayerBody
   - EnemyBullet
+  - Arrow
+  - Apple
+  - Kata
+  - Click
+  - Target
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -66,3 +72,4 @@ TagManager:
     locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []

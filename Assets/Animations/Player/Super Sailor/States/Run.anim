@@ -7,7 +7,7 @@ AnimationClip:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Run
-  serializedVersion: 7
+  serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
@@ -71,6 +71,7 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
       isSerializeReferenceCurve: 0
+      metaData: 0
     pptrCurveMapping:
     - {fileID: 3788338134833184828, guid: 18d9a552659b8df4c86b8cebe4ebdbf7, type: 3}
     - {fileID: 3839124661472051193, guid: 1107e516600441f41a5dab1cd41bd8ea, type: 3}

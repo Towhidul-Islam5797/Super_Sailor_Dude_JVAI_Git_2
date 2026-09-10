@@ -4,38 +4,66 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
+    [Header("Panels")]
     public GameObject _gameOverPanel;
     public GameObject _winPanel;
+
 
     private void Awake()
     {
         Instance = this;
     }
 
+
     private void Start()
     {
-        _gameOverPanel.SetActive(false);
-        _winPanel.SetActive(false);
+        if (_gameOverPanel != null)
+            _gameOverPanel.SetActive(false);
+
+        if (_winPanel != null)
+            _winPanel.SetActive(false);
     }
+
+
+    // =====================================================
+    // GAME OVER
+    // =====================================================
 
     public void ShowGameOver()
     {
-        _gameOverPanel.SetActive(true);
+        if (_gameOverPanel != null)
+            _gameOverPanel.SetActive(true);
     }
+
+
+    // =====================================================
+    // WIN
+    // =====================================================
 
     public void ShowWinPanel()
     {
-        _winPanel.SetActive(true);
+        if (_winPanel != null)
+            _winPanel.SetActive(true);
     }
 
-    // Called by Sticker Book button (wire this up in Inspector)
+
+    // =====================================================
+    // STICKER BOOK TOGGLE
+    // =====================================================
+
     public void OpenStickerBook()
     {
-        StickerManager.Instance.OpenStickerBook();
-    }
-
-    public void CloseStickerBook()
-    {
-        StickerManager.Instance.CloseStickerBook();
+        if (StickerManager.Instance != null)
+        {
+            // একবার click = Open
+            // আবার click = Close
+            StickerManager.Instance.ToggleStickerBook();
+        }
+        else
+        {
+            Debug.LogError(
+                "StickerManager.Instance is NULL!"
+            );
+        }
     }
 }
