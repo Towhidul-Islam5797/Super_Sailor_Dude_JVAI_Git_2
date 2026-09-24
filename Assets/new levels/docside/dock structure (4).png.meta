@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: 7858725810fab05458c79c5b2f2789be
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6800881892810884884
+    second: dock structure (4)_0
+  - first:
+      213: -5479877928238822255
+    second: dock structure (4)_1
+  - first:
+      213: 1157849321976165724
+    second: dock structure (4)_2
+  - first:
+      213: -8573539933901415464
+    second: dock structure (4)_3
+  - first:
+      213: 2693098064011522386
+    second: dock structure (4)_4
+  - first:
+      213: 8504258789563496427
+    second: dock structure (4)_5
+  - first:
+      213: -5787538520927952539
+    second: dock structure (4)_6
+  - first:
+      213: 7796948070750536819
+    second: dock structure (4)_7
+  - first:
+      213: -6670630481885186657
+    second: dock structure (4)_8
+  - first:
+      213: -3508865644941879438
+    second: dock structure (4)_9
+  - first:
+      213: 7296425503248262922
+    second: dock structure (4)_10
+  - first:
+      213: -3975933387742555270
+    second: dock structure (4)_11
+  - first:
+      213: -1318517949544969406
+    second: dock structure (4)_12
+  - first:
+      213: -751467653465364510
+    second: dock structure (4)_13
+  - first:
+      213: -6740923529925892555
+    second: dock structure (4)_14
+  - first:
+      213: 5614152645778238282
+    second: dock structure (4)_15
+  - first:
+      213: 7186512993829615757
+    second: dock structure (4)_16
+  - first:
+      213: 872434501955672257
+    second: dock structure (4)_17
+  - first:
+      213: -6936958642771470843
+    second: dock structure (4)_18
+  - first:
+      213: -5527930091629770400
+    second: dock structure (4)_19
+  - first:
+      213: -7043591504616063496
+    second: dock structure (4)_20
+  - first:
+      213: 3046387920359849861
+    second: dock structure (4)_21
+  - first:
+      213: -2032177932137197670
+    second: dock structure (4)_22
+  - first:
+      213: -3685308126356575874
+    second: dock structure (4)_23
+  - first:
+      213: 4655843624733770013
+    second: dock structure (4)_24
+  - first:
+      213: 6121617081462265262
+    second: dock structure (4)_25
+  - first:
+      213: 3247263382972822387
+    second: dock structure (4)_26
+  - first:
+      213: 1809855211674396178
+    second: dock structure (4)_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dock structure (4)_0
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1055
+        width: 160
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8fe9b73f96e91a0800000000000000
+      internalID: -6800881892810884884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1445
+        height: 1052
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c42d2de0093f3b0800000000000000
+      internalID: -5479877928238822255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1026
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55f0d3e2d1811010800000000000000
+      internalID: 1157849321976165724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_3
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 121
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8db1e2ccadaa40980800000000000000
+      internalID: -8573539933901415464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_4
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 116
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251f2baab6ecf5520800000000000000
+      internalID: 2693098064011522386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 80
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7fce5cf42350670800000000000000
+      internalID: 8504258789563496427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_6
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 66
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561233001688eafa0800000000000000
+      internalID: -5787538520927952539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_7
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 66
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374c049d5f2543c60800000000000000
+      internalID: 7796948070750536819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_8
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 80
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9537535be82d63a0800000000000000
+      internalID: -6670630481885186657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 62
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277daa469410e4fc0800000000000000
+      internalID: -3508865644941879438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_10
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 23
+        width: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07a63b465c124560800000000000000
+      internalID: 7296425503248262922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_11
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 62
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a735df436a5a2d8c0800000000000000
+      internalID: -3975933387742555270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_12
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 68
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b456329eea3bde0800000000000000
+      internalID: -1318517949544969406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_13
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 69
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7200f86204295f0800000000000000
+      internalID: -751467653465364510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 63
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536e1b4b3cd6372a0800000000000000
+      internalID: -6740923529925892555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_15
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 68
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b6e66161a79ed40800000000000000
+      internalID: 5614152645778238282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_16
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 51
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8871fafd7f9bb360800000000000000
+      internalID: 7186512993829615757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_17
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 46
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8dcd2ae828b1c00800000000000000
+      internalID: 872434501955672257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_18
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 29
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506d7043ed8fabf90800000000000000
+      internalID: -6936958642771470843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_19
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 35
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0690731bed8d843b0800000000000000
+      internalID: -5527930091629770400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_20
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 51
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd766858d2204e90800000000000000
+      internalID: -7043591504616063496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 34
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ff6115ca1f64a20800000000000000
+      internalID: 3046387920359849861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_22
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 18
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f039a00f04cc3e0800000000000000
+      internalID: -2032177932137197670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_23
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 31
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79e7a0e8c72bdcc0800000000000000
+      internalID: -3685308126356575874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_24
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 29
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d110606eb11ec9040800000000000000
+      internalID: 4655843624733770013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_25
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 16
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea595874d4a54f450800000000000000
+      internalID: 6121617081462265262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_26
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 15
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3737a3297d8901d20800000000000000
+      internalID: 3247263382972822387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dock structure (4)_27
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 15
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216edbad9b5ed1910800000000000000
+      internalID: 1809855211674396178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dock structure (4)_0: -6800881892810884884
+      dock structure (4)_1: -5479877928238822255
+      dock structure (4)_10: 7296425503248262922
+      dock structure (4)_11: -3975933387742555270
+      dock structure (4)_12: -1318517949544969406
+      dock structure (4)_13: -751467653465364510
+      dock structure (4)_14: -6740923529925892555
+      dock structure (4)_15: 5614152645778238282
+      dock structure (4)_16: 7186512993829615757
+      dock structure (4)_17: 872434501955672257
+      dock structure (4)_18: -6936958642771470843
+      dock structure (4)_19: -5527930091629770400
+      dock structure (4)_2: 1157849321976165724
+      dock structure (4)_20: -7043591504616063496
+      dock structure (4)_21: 3046387920359849861
+      dock structure (4)_22: -2032177932137197670
+      dock structure (4)_23: -3685308126356575874
+      dock structure (4)_24: 4655843624733770013
+      dock structure (4)_25: 6121617081462265262
+      dock structure (4)_26: 3247263382972822387
+      dock structure (4)_27: 1809855211674396178
+      dock structure (4)_3: -8573539933901415464
+      dock structure (4)_4: 2693098064011522386
+      dock structure (4)_5: 8504258789563496427
+      dock structure (4)_6: -5787538520927952539
+      dock structure (4)_7: 7796948070750536819
+      dock structure (4)_8: -6670630481885186657
+      dock structure (4)_9: -3508865644941879438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
